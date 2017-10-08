@@ -1,2 +1,3 @@
-interface ChannelReader {
+interface ChannelReader<out T> {
+    fun receive(): T
 }

@@ -1,0 +1,1 @@
+class ChannelReaderException(message: String?) : Exception(message)
