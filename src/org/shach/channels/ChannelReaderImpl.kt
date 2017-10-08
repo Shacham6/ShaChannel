@@ -2,7 +2,7 @@ package org.shach.channels
 
 import java.util.concurrent.TransferQueue
 
-class ChannelReaderImpl<T>(private val dataQueue: TransferQueue<T>) : ChannelReader<T> {
+internal class ChannelReaderImpl<T>(private val dataQueue: TransferQueue<T>) : ChannelReader<T> {
 
     override fun receive(): T {
         return dataQueue.take()
