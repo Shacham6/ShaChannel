@@ -1,4 +1,4 @@
-import java.util.concurrent.TimeUnit
+package org.shach.channels
 
 interface ChannelReader<T> {
     fun receive(): T
